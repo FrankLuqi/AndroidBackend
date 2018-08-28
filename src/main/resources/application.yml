@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: demo
+    password: luqi741852963
+    url: jdbc:mysql://120.79.149.135:3306/androidbackend?useUnicode=true&characterEncoding=utf8&useSSL=false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  freemarker:
+    content-type: text/html
+    charset: UTF-8
+    cache: false
+
+  servlet:
+    multipart:
+      max-file-size: 10mb
+      max-request-size: 100mb
+#设置每次上传的文件最大为10mb，单次请求的文件总数不能大于100mb
+
